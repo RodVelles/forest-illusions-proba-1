@@ -1,0 +1,83 @@
+/* Кольри логотипа #D9D9D9,
+#FF0000.
+Меню #D9D9D9, 
+#FF914D,
+#00BF63,
+#FF0000.
+
+Кольри тексту
+головний #212121
+другорядний #757575
+виділений #FFFFFF
+вторичий футер rgba(255, 255, 255, 0.6);
+
+*/
+:root {
+	--primary-text-color: #f5f5f5;
+	--kontact-text-color: #b4b4b4;
+	--accent-color: #ffffff;
+}
+
+body {
+	background-color: #262425;
+	color: var(--primary-text-color);
+}
+
+.link {
+	text-decoration: none;
+}
+
+.list {
+	list-style: none;
+}
+
+/* Оформлення шапки */
+
+/* Логотип сайту */
+
+.logo {
+	color: #ffc300;
+	text-decoration: none;
+}
+
+.logo-blue {
+	color: #0000ff;
+}
+
+.nav .logo:hover,
+.nav .logo:focus {
+	color: var(--accent-color);
+}
+
+/* Навігація сайту */
+
+.site-nav .games {
+	color: #ff0000;
+}
+
+.site-nav .heroes {
+	color: #ea4500;
+}
+
+.site-nav .spirits {
+	color: #2aff00;
+}
+
+.site-nav .histories {
+	color: #ff0074;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+	color: var(--accent-color);
+}
+
+/* Контактна інформація */
+.kontakt .kontact-link {
+	color: var(--kontact-text-color);
+}
+
+.kontakt .kontact-link:hover,
+.kontakt .kontact-link:focus {
+	color: var(--accent-color);
+}
