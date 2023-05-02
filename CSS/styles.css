@@ -72,12 +72,12 @@ body {
 }
 
 /* Контактна інформація */
-.kontakt .kontact-link {
+.contact .contact-link {
 	color: var(--kontact-text-color);
 }
 
-.kontakt .kontact-link:hover,
-.kontakt .kontact-link:focus {
+.contact .contact-link:hover,
+.contact .contact-link:focus {
 	color: var(--accent-color);
 }
 
@@ -94,3 +94,16 @@ body {
 }
 
 /* Режими гри */
+.section .section-title {
+	color: var(--title-color);
+}
+
+/* Розробники гри */
+
+/* Футер */
+.address .address {
+	color: var(--title-color);
+}
+.address .contact-link {
+	color: var(--kontact-text-color);
+}
