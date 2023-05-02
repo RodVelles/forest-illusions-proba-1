@@ -6,16 +6,17 @@
 #FF0000.
 
 Кольри тексту
-головний #212121
+головний #C0C0C0
 другорядний #757575
 виділений #FFFFFF
 вторичий футер rgba(255, 255, 255, 0.6);
 
 */
 :root {
-	--primary-text-color: #f5f5f5;
+	--primary-text-color: #c0c0c0;
 	--kontact-text-color: #b4b4b4;
 	--accent-color: #ffffff;
+	--title-color: #fffafa;
 }
 
 body {
@@ -34,7 +35,6 @@ body {
 /* Оформлення шапки */
 
 /* Логотип сайту */
-
 .logo {
 	color: #ffc300;
 	text-decoration: none;
@@ -50,7 +50,6 @@ body {
 }
 
 /* Навігація сайту */
-
 .site-nav .games {
 	color: #ff0000;
 }
@@ -81,3 +80,17 @@ body {
 .kontakt .kontact-link:focus {
 	color: var(--accent-color);
 }
+
+/* Головна сторінка */
+
+/* Герой сторінки */
+.hero .hero-title {
+	color: #ffd700;
+}
+
+/* Головні переваги гри */
+.list .section-subtitle {
+	color: var(--title-color);
+}
+
+/* Режими гри */
