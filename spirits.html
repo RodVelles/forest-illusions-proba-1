@@ -5,49 +5,145 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Spirits</title>
+		<link rel="stylesheet" href="./CSS/spirits.css" />
 	</head>
 	<body>
 		<!-- Створення шапки сторінки -->
-		<header>
-			<nav>
+		<header class="header">
+			<nav class="nav">
 				<!-- Логотип гри -->
-				<a href="./index.html" lang="en">
+				<a href="https://rodvelles.github.io/forest-illusions-proba-1/" lang="en" class="logo">
 					<img src="./images/svg/logo.svg" alt="Логотип компаеії" width="53" height="54" />
-					Forest
-					<br />
-					of
+					<span class="logo-blue">Forest of</span>
 					<br />
 					Illusions
 				</a>
-				<ul>
-					<li><a href="">Ігри</a></li>
-					<li><a href="./heroes.html">Герої</a></li>
-					<li><a href="./spirits.html">Духи</a></li>
-					<li><a href="">Новелли</a></li>
+				<ul class="site-nav list">
+					<li><a href="" class="link games">Ігри</a></li>
+					<li><a href="./heroes.html" class="link heroes">Герої</a></li>
+					<li><a href="./spirits.html" class="link spirits">Духи</a></li>
+					<li><a href="" class="link historis">Історії</a></li>
 				</ul>
 			</nav>
-			<ul>
-				<li><a href="mailto:info@gmail.com" lang="en">info@gmail.com</a></li>
-				<li><a href="tel:+380000000111">+38 096 000 01 11</a></li>
+			<ul class="list contact">
+				<li><a href="mailto:info@gmail.com" lang="en" class="link contact-link">info@gmail.com</a></li>
+				<li><a href="tel:+380000000111" class="link contact-link">+38 096 000 01 11</a></li>
 			</ul>
 		</header>
+		<!-- Унікальний конент сторінки -->
+
+		<main>
+			<!-- Фільтер сторінки по класу -->
+			<section class="section">
+				<h1 class="section-title">Духи</h1>
+				<ul class="list">
+					<li><button type="button" class="btn">Всі</button></li>
+					<li><button type="button" class="btn">Головні</button></li>
+					<li><button type="button" class="btn">Воїни</button></li>
+					<li><button type="button" class="btn">Водяні</button></li>
+					<li><button type="button" class="btn">Лісові</button></li>
+					<li><button type="button" class="btn">Землеві</button></li>
+					<li><button type="button" class="btn">Повітря</button></li>
+					<li><button type="button" class="btn">Пори року</button></li>
+				</ul>
+
+				<!-- Фільтер сторінки по оцінці -->
+				<ul class="list">
+					<li><button type="button" class="btn">SSS</button></li>
+					<li><button type="button" class="btn">SS</button></li>
+					<li><button type="button" class="btn">S</button></li>
+					<li><button type="button" class="btn">A</button></li>
+					<li><button type="button" class="btn">B</button></li>
+					<li><button type="button" class="btn">C</button></li>
+					<li><button type="button" class="btn">D</button></li>
+					<li><button type="button" class="btn">F</button></li>
+				</ul>
+
+				<!-- Глалерея -->
+				<ul class="list">
+					<li>
+						<a href="" class="link link-kontent">
+							<img src="./images/heroes/volodumer.jpg" alt="Зображення Володимера Великого" />
+							<h2 class="section-subtitle">Володимер Великий</h2>
+							<p class="section-text">Князь Русі</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="link link-kontent">
+							<img src="./images/heroes/bohdan.jpg" alt="Зображення Богдана Хмельницького" />
+							<h2 class="section-subtitle">Богдан Хмельницький</h2>
+							<p class="section-text">Отаман Запорожзької Січі</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="link link-kontent">
+							<img src="./images/heroes/taras.jpg" alt="Зображення Тараса Шевченка" />
+							<h2 class="section-subtitle">Тарас Шевченко</h2>
+							<p class="section-text">Народний Поет</p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="link link-kontent">
+							<img src="" alt="" />
+							<h2 class="section-subtitle"></h2>
+							<p class="section-text"></p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="link link-kontent">
+							<img src="" alt="" />
+							<h2 class="section-subtitle"></h2>
+							<p class="section-text"></p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="link link-kontent">
+							<img src="" alt="" />
+							<h2 class="section-subtitle"></h2>
+							<p class="section-text"></p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="link link-kontent">
+							<img src="" alt="" />
+							<h2 class="section-subtitle"></h2>
+							<p class="section-text"></p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="link link-kontent">
+							<img src="" alt="" />
+							<h2 class="section-subtitle"></h2>
+							<p class="section-text"></p>
+						</a>
+					</li>
+					<li>
+						<a href="" class="link link-kontent">
+							<img src="" alt="" />
+							<h2 class="section-subtitle"></h2>
+							<p class="section-text"></p>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</main>
 
 		<!-- Нижні дані -->
-		<footer>
+		<footer class="footer">
 			<!-- Логотип гри -->
-			<a href="">
-				<img src="./images/svg/logo.svg" alt="Логотоп гри" width="53" height="54" />
-				Forest
-				<br />
-				of
+			<a href="https://rodvelles.github.io/forest-illusions-proba-1/" lang="en" class="logo">
+				<img src="./images/svg/logo.svg" alt="Логотип компаеії" width="53" height="54" />
+				<span class="logo-blue">Forest of</span>
 				<br />
 				Illusions
 			</a>
 			<!-- Адрес Компанії -->
-			<address>
-				<a href="https://goo.gl/maps/vgGjAau9LxN1YPiL8">Моя стодола 10А</a>
-				<a href="mailto:info@gmail.com">info@gamil.com</a>
-				<a href="tel:+380960000111">+38 096 000 01 11</a>
+			<address class="address">
+				<a href="https://goo.gl/maps/vgGjAau9LxN1YPiL8" class="link address">Моя стодола 10А</a>
+				<br />
+				<a href="mailto:info@gmail.com" class="link contact-link">info@gamil.com</a>
+				<br />
+				<a href="tel:+380960000111" class="link contact-link">+38 096 000 01 11</a>
 			</address>
 		</footer>
 	</body>

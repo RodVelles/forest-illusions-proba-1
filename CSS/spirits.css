@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: #47290b;
+	background-color: #007eff;
 	color: var(--primary-text-color);
 }
 
@@ -38,6 +38,11 @@ body {
 	color: var(--accent-color);
 }
 
+.nav .logo-blue:hover,
+.nav .logo-blue:focus {
+	color: var(--accent-color);
+}
+
 /* Навігація сайту */
 .site-nav .games {
 	color: #ff0000;
@@ -60,7 +65,7 @@ body {
 	color: var(--accent-color);
 }
 
-.site-nav .heroes {
+.site-nav .spirits {
 	color: var(--accent-color);
 }
 
