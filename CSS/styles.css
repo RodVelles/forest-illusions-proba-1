@@ -22,6 +22,8 @@
 body {
 	background-color: #262425;
 	color: var(--primary-text-color);
+	font-family: "Sofia Sans Semi Condensed", sans-serif;
+	letter-spacing: 0.03em;
 }
 
 .link {
@@ -37,6 +39,10 @@ body {
 /* Логотип сайту */
 .logo {
 	color: #ffc300;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+
 	text-decoration: none;
 }
 
@@ -44,12 +50,13 @@ body {
 	color: #0000ff;
 }
 
-.nav .logo:hover,
-.nav .logo:focus {
-	color: var(--accent-color);
-}
-
 /* Навігація сайту */
+.site-nav .link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
 .site-nav .games {
 	color: #ff0000;
 }
@@ -74,6 +81,10 @@ body {
 /* Контактна інформація */
 .contact .contact-link {
 	color: var(--kontact-text-color);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 
 .contact .contact-link:hover,
@@ -84,26 +95,74 @@ body {
 /* Головна сторінка */
 
 /* Герой сторінки */
+.hero {
+	background-color: #0027ab;
+}
+
+.hero .button {
+	font-family: "Sofia Sans Semi Condensed", sans-serif;
+	color: #262425;
+	background-color: #ffd700;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+}
+
 .hero .hero-title {
 	color: #ffd700;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
 }
 
 /* Головні переваги гри */
+.section .section-title {
+	color: var(--title-color);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+}
+
 .list .section-subtitle {
 	color: var(--title-color);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 
 /* Режими гри */
-.section .section-title {
-	color: var(--title-color);
-}
 
 /* Розробники гри */
-
+.section-name {
+	color: var(--title-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+}
 /* Футер */
 .address .address {
 	color: var(--title-color);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
 }
 .address .contact-link {
 	color: var(--kontact-text-color);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
 }

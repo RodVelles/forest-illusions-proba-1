@@ -6,8 +6,9 @@
 }
 
 body {
-	background-color: #007eff;
+	background-color: #262425;
 	color: var(--primary-text-color);
+	font-family: "Sofia Sans Semi Condensed", sans-serif;
 }
 
 .link {
