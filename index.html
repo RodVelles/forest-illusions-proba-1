@@ -11,30 +11,39 @@
 			href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<link rel="stylesheet" href="./CSS/styles.css" />
 	</head>
 	<body>
 		<!-- Створення шапки сторінки -->
-		<header>
-			<nav class="nav">
-				<!-- Логотип гри -->
-				<a href="https://rodvelles.github.io/forest-illusions-proba-1/" lang="en" class="logo">
-					<img src="./images/svg/logo.svg" alt="Логотип компаеії" width="63" height="64" />
-					<span class="logo-blue">FOREST OF</span>
-					<br />
-					ILLUSIONS
-				</a>
-				<ul class="site-nav list">
-					<li><a href="" class="link games">ІГРИ</a></li>
-					<li><a href="./heroes.html" class="link heroes">ГЕРОЇ</a></li>
-					<li><a href="./spirits.html" class="link spirits">ДУХИ</a></li>
-					<li><a href="" class="link historis">ІСТОРІЇ</a></li>
+		<header class="header">
+			<div class="container">
+				<nav class="nav">
+					<!-- Логотип гри -->
+					<a href="https://rodvelles.github.io/forest-illusions-proba-1/" lang="en" class="logo">
+						<img src="./images/svg/logo.svg" alt="Логотип компаеії" width="63" height="64" />
+						<span class="logo-blue">FOREST OF</span>
+						<br />
+						ILLUSIONS
+					</a>
+					<ul class="site-nav list">
+						<li><a href="" class="link games">ІГРИ</a></li>
+						<li><a href="./heroes.html" class="link heroes">ГЕРОЇ</a></li>
+						<li><a href="./spirits.html" class="link spirits">ДУХИ</a></li>
+						<li><a href="" class="link historis">ІСТОРІЇ</a></li>
+					</ul>
+				</nav>
+				<ul class="list contact">
+					<li><a href="mailto:info@gmail.com" lang="en" class="link contact-link">info@gmail.com</a></li>
+					<li><a href="tel:+380000000111" class="link contact-link">+38 096 000 01 11</a></li>
 				</ul>
-			</nav>
-			<ul class="list contact">
-				<li><a href="mailto:info@gmail.com" lang="en" class="link contact-link">info@gmail.com</a></li>
-				<li><a href="tel:+380000000111" class="link contact-link">+38 096 000 01 11</a></li>
-			</ul>
+			</div>
 		</header>
 
 		<!-- Унікальний контент сторінки -->
@@ -47,92 +56,113 @@
 
 			<!-- Головні перваги гри -->
 			<section class="section">
-				<h2 class="section-title">Переваги гри</h2>
-				<ul class="list">
-					<li>
-						<h3 class="section-subtitle">Українська історія та культура</h3>
-						<p class="section-text">
-							Гра містить в собі відомі історичні фігури, такі як Богдан Хмельницький, Іван Мазепа та Тарас Шевченко, що
-							допоможе гравцям більш детально познайомитись з їх життям та діяльністю.
-						</p>
-					</li>
-					<li>
-						<h3 class="section-subtitle">Українська міфологія та повір'я</h3>
-						<p class="section-text">
-							Гра включає в себе українських духів лісів, таких як Лісовик, Водяник та Мавки. Це надає гравцям
-							можливість дізнатись більше про українську міфологію та повір'я.
-						</p>
-					</li>
-					<li>
-						<h3 class="section-subtitle">Розвиває навички</h3>
-						<p class="section-text">
-							Гра також допомагає розвивати різні навички, такі як логічне мислення, стратегічне планування та
-							співпрацю. Ці навички можуть бути корисними не тільки під час гри, а й у повсякденному житті.
-						</p>
-					</li>
-					<li>
-						<h3 class="section-subtitle">Веселе проведення часу</h3>
-						<p class="section-text">
-							Гра надає можливість зануритись у світ української історії та культури, дізнатись цікаві факти та весело
-							провести час з друзями та родиною. Такий відпочинок допоможе зняти напругу та покращити настрій
-						</p>
-					</li>
-				</ul>
+				<div class="container">
+					<h2 class="section-title visually-hidden">Переваги гри</h2>
+					<ul class="list">
+						<li>
+							<h3 class="section-subtitle">Українська історія та культура</h3>
+							<p class="section-text">
+								Гра містить в собі відомі історичні фігури, такі як Богдан Хмельницький, Іван Мазепа та Тарас Шевченко,
+								що допоможе гравцям більш детально познайомитись з їх життям та діяльністю.
+							</p>
+						</li>
+						<li>
+							<h3 class="section-subtitle">Українська міфологія та повір'я</h3>
+							<p class="section-text">
+								Гра включає в себе українських духів лісів, таких як Лісовик, Водяник та Мавки. Це надає гравцям
+								можливість дізнатись більше про українську міфологію та повір'я.
+							</p>
+						</li>
+						<li>
+							<h3 class="section-subtitle">Розвиває навички</h3>
+							<p class="section-text">
+								Гра також допомагає розвивати різні навички, такі як логічне мислення, стратегічне планування та
+								співпрацю. Ці навички можуть бути корисними не тільки під час гри, а й у повсякденному житті.
+							</p>
+						</li>
+						<li>
+							<h3 class="section-subtitle">Веселе проведення часу</h3>
+							<p class="section-text">
+								Гра надає можливість зануритись у світ української історії та культури, дізнатись цікаві факти та весело
+								провести час з друзями та родиною. Такий відпочинок допоможе зняти напругу та покращити настрій
+							</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<!-- Режими гри -->
 			<section class="section">
-				<h2 class="section-title">Режими гри</h2>
-				<ul class="list">
-					<li>
-						<a href=""><img src="./images/regime1.jpg" alt="Подорожуюча людина в лісі" /></a>
-					</li>
-					<li>
-						<a href=""><img src="./images/regime2.jpg" alt="Люди грають в настільну гру" /></a>
-					</li>
-					<li>
-						<a href=""><img src="./images/regime3.jpg" alt="Люди грають колодою карт" /></a>
-					</li>
-				</ul>
+				<div class="container">
+					<h2 class="section-title">Режими гри</h2>
+					<ul class="list">
+						<li>
+							<a href=""><img src="./images/regime1.jpg" alt="Подорожуюча людина в лісі" /></a>
+						</li>
+						<li>
+							<a href=""><img src="./images/regime2.jpg" alt="Люди грають в настільну гру" /></a>
+						</li>
+						<li>
+							<a href=""><img src="./images/regime3.jpg" alt="Люди грають колодою карт" /></a>
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<!-- Розробники гри -->
 			<section class="section">
-				<h2 class="section-title">Розробники гри</h2>
-				<ul class="list">
-					<li>
-						<img src="./images/men1.jpg" alt="Фото розробника" />
-						<div>
-							<h3 class="section-name">Бойченюк Михайло</h3>
-						</div>
-					</li>
-					<li>
-						<img src="./images/men2.jpg" alt="Фото розробника" />
-						<div>
-							<h3 class="section-name">Рогацький Іван</h3>
-						</div>
-					</li>
-				</ul>
+				<div class="container">
+					<h2 class="section-title">Розробники гри</h2>
+					<ul class="list">
+						<li>
+							<img src="./images/men1.jpg" alt="Фото розробника" />
+							<div>
+								<h3 class="section-name">Бойченюк Михайло</h3>
+							</div>
+						</li>
+						<li>
+							<img src="./images/men2.jpg" alt="Фото розробника" />
+							<div>
+								<h3 class="section-name">Рогацький Іван</h3>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</section>
 		</main>
 
 		<!-- Нижні дані -->
-		<footer>
-			<!-- Логотип гри -->
-			<a href="https://rodvelles.github.io/forest-illusions-proba-1/" lang="en" class="logo">
-				<img src="./images/svg/logo.svg" alt="Логотип компаеії" width="53" height="54" />
-				<span class="logo-blue">FOREST OF</span>
-				<br />
-				ILLUSIONS
-			</a>
-			<!-- Адрес Компанії -->
-			<address class="address">
-				<a href="https://goo.gl/maps/vgGjAau9LxN1YPiL8" class="link address">Моя стодола 10А</a>
-				<br />
-				<a href="mailto:info@gmail.com" class="link contact-link">info@gamil.com</a>
-				<br />
-				<a href="tel:+380960000111" class="link contact-link">+38 096 000 01 11</a>
-			</address>
+		<footer class="footer">
+			<div class="container">
+				<!-- Логотип гри -->
+				<a href="https://rodvelles.github.io/forest-illusions-proba-1/" lang="en" class="logo">
+					<img src="./images/svg/logo.svg" alt="Логотип компаеії" width="53" height="54" />
+					<span class="logo-blue">FOREST OF</span>
+					<br />
+					ILLUSIONS
+				</a>
+				<!-- Адрес Компанії -->
+				<address class="address">
+					<ul class="list">
+						<li class="link-addres">
+							<a
+								href="https://goo.gl/maps/vgGjAau9LxN1YPiL8"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="link address"
+							>
+								Моя стодола 10А
+							</a>
+						</li>
+						<li class="link-addres">
+							<a href="mailto:info@gmail.com" class="link contact-link">info@gamil.com</a>
+						</li>
+						<li class="link-addres">
+							<a href="tel:+380960000111" class="link contact-link">+38 096 000 01 11</a>
+						</li>
+					</ul>
+				</address>
+			</div>
 		</footer>
 	</body>
 </html>

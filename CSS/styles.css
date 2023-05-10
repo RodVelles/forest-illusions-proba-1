@@ -12,11 +12,26 @@
 вторичий футер rgba(255, 255, 255, 0.6);
 
 */
+
+/* Утиліти */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+p {
+	margin: 0;
+}
+
 :root {
 	--primary-text-color: #c0c0c0;
 	--kontact-text-color: #b4b4b4;
 	--accent-color: #ffffff;
 	--title-color: #fffafa;
+	--secondary-accent-color: #ffc300;
 }
 
 body {
@@ -32,13 +47,33 @@ body {
 
 .list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* Оформлення шапки */
 
+.header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	background-color: #01003a;
+	border-bottom: 1px solid var(--accent-color);
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	outline: 2px solid red;
+}
+
 /* Логотип сайту */
 .logo {
-	color: #ffc300;
+	color: var(--secondary-accent-color);
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
@@ -53,8 +88,8 @@ body {
 /* Навігація сайту */
 .site-nav .link {
 	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
+	font-size: 26px;
+	line-height: 1.19;
 	letter-spacing: 0.02em;
 }
 .site-nav .games {
@@ -96,35 +131,58 @@ body {
 
 /* Герой сторінки */
 .hero {
+	padding-top: 200px;
+	padding-bottom: 200px;
+
 	background-color: #0027ab;
 }
 
 .hero .button {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	border: none;
+	padding: 10px 32px;
+	min-width: 200px;
+
 	font-family: "Sofia Sans Semi Condensed", sans-serif;
 	color: #262425;
-	background-color: #ffd700;
+	background-color: var(--secondary-accent-color);
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
 
-	display: flex;
+	display: block;
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
 }
 
+.hero .button:hover,
+.hero .button:focus {
+	color: var(--accent-color);
+	background-color: red;
+	border: var(--secondary-accent-color);
+}
+
 .hero .hero-title {
-	color: #ffd700;
+	color: var(--secondary-accent-color);
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 700px;
 }
 
 /* Головні переваги гри */
 .section .section-title {
+	margin-bottom: 50px;
+
 	color: var(--title-color);
 	font-weight: 700;
 	font-size: 36px;
@@ -133,6 +191,8 @@ body {
 }
 
 .list .section-subtitle {
+	margin-bottom: 10px;
+
 	color: var(--title-color);
 	font-weight: 700;
 	font-size: 14px;
@@ -143,6 +203,24 @@ body {
 
 /* Режими гри */
 
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 /* Розробники гри */
 .section-name {
 	color: var(--title-color);
@@ -152,6 +230,21 @@ body {
 	text-align: center;
 }
 /* Футер */
+
+.footer {
+	background-color: black;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.address {
+	margin-top: 20px;
+}
+
+.link-addres:not(:last-child) {
+	margin-bottom: 9px;
+}
+
 .address .address {
 	color: var(--title-color);
 	font-style: normal;
