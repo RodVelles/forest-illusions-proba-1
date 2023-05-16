@@ -1,12 +1,36 @@
+/* Кольри логотипа #D9D9D9,
+#FF0000.
+Меню #D9D9D9, 
+#FF914D,
+#00BF63,
+#FF0000.
+
+Кольри тексту
+головний #C0C0C0
+другорядний #757575
+виділений #FFFFFF
+вторичий футер rgba(255, 255, 255, 0.6);
+
+*/
+
+/* Утиліти */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
 :root {
 	--primary-text-color: #c0c0c0;
 	--kontact-text-color: #b4b4b4;
 	--accent-color: #ffffff;
 	--title-color: #fffafa;
-	--button-font-color: #262425;
-	--button-rating-color: #ffc300;
-	--button-active-color: #ff0000;
-	--button-name-color: #0000ff;
+	--secondary-accent-color: #ffc300;
 }
 
 body {
@@ -22,30 +46,84 @@ body {
 
 .list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* Оформлення шапки */
 
+.header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	background-color: #01003a;
+	border-bottom: 1px solid var(--accent-color);
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	outline: 2px solid red;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
 /* Логотип сайту */
+.container-nav {
+	display: flex;
+	align-items: center;
+}
+
 .logo {
-	color: #ffc300;
+	display: flex;
+	padding-right: 15px;
+
+	color: var(--secondary-accent-color);
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
 
 	text-decoration: none;
-	text-transform: uppercase;
 }
 
 .logo-blue {
 	color: #0000ff;
 }
 
+.logo:hover .logo-blue,
+.logo:focus .logo-blue {
+	color: #fff;
+}
+
+.logo:hover,
+.logo:focus {
+	color: var(--accent-color);
+	background-color: black;
+	border-radius: 25px;
+}
+
 /* Навігація сайту */
+.site-nav {
+	display: flex;
+	align-items: center;
+	margin-left: 90px;
+}
+
 .site-nav .link {
+	display: block;
+	padding: 8px;
+	gap: 30px;
+
 	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
+	font-size: 26px;
+	line-height: 1.19;
 	letter-spacing: 0.02em;
 }
 .site-nav .games {
@@ -64,17 +142,27 @@ body {
 	color: #ff0074;
 }
 
+.site-nav .item:not(:last-child) {
+	margin-right: 10px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
 	color: var(--accent-color);
-}
-
-.site-nav .heroes {
-	color: var(--accent-color);
+	background-color: black;
+	border-radius: 20px;
 }
 
 /* Контактна інформація */
+.container .contact {
+	margin-left: auto;
+}
+
 .contact .contact-link {
+	display: block;
+	border-radius: 10px;
+	padding: 3px;
+
 	color: var(--kontact-text-color);
 	font-weight: 500;
 	font-size: 14px;
@@ -82,9 +170,14 @@ body {
 	letter-spacing: 0.02em;
 }
 
+.contact .item:not(:last-child) {
+	margin-bottom: 3px;
+}
+
 .contact .contact-link:hover,
 .contact .contact-link:focus {
 	color: var(--accent-color);
+	background-color: black;
 }
 
 /* Унікальний контен сторінки */
@@ -148,7 +241,25 @@ body {
 	line-height: 1.88;
 }
 
-/* Футер */
+
+
+.footer {
+	background-color: black;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer .footer-nav {
+	display: flex;
+}
+
+.address {
+	margin-top: 20px;
+}
+
+.link-addres:not(:last-child) {
+	margin-bottom: 9px;
+}
 
 .address .address {
 	color: var(--title-color);
@@ -157,7 +268,6 @@ body {
 	font-size: 14px;
 	line-height: 1.71;
 }
-
 .address .contact-link {
 	color: var(--kontact-text-color);
 	font-style: normal;
